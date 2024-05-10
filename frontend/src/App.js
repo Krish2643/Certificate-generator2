@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home/Home';
 import Example from './pages/Certificate/Example'
 import Certificate from './pages/Certificate/Certificate';
+import Feedback from './pages/Feedback/Feedback';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/example' element={<Example />} />
+      <Route path='/feedback' element={<Feedback />} />
       <Route path='/certificate-generate' element={<Certificate />} />
     </Routes>
     </BrowserRouter>

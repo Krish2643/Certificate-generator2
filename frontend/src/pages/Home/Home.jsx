@@ -10,6 +10,10 @@ const Home = () => {
        navigate('/certificate-generate');
    }
 
+   const feedback = ()=>{
+    navigate('/feedback');
+   }
+
   return (
     <div className="cards">
     <div id="card">
@@ -18,7 +22,7 @@ const Home = () => {
   </div>
   <div id="card">
     <h2>Manage Certificate</h2>
-    <button id="addfrn">Get</button>
+    <button id="addfrn" onClick={feedback} >Get</button>
   </div>
   
     </div>
