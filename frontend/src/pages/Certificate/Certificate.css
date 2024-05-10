@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.container{
+   display: flex;
+}
+.aside{
+    width: 20%;
+    height: 100vh;
+    background-color:#313232;
+    padding: 10px;
+    padding-top: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.input-text{
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+    margin: 8px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn{
+    background-color: #39e968;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    padding: 8px 16px;
+}
+.certificate-page{
+    height: 100vh;
+    /* width: 80%; */
+    width: 100%;
+    justify-content: center;
+    background: transparent;
+    text-align: center;
+    position: relative;
+    object-fit: contain;
+}
+.container-to-pdf{
+    object-fit: contain;
+}
+.certificate-img{
+    height: 99.50vh;
+}
+.user-details{
+    position: absolute;
+    top: 32%;
+    left: 31%;
+    text-align: center;
+}
+.user-name{
+    color: goldenrod;
+    font-size: 3.5rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+.user-course{
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 2.5rem;
+}
