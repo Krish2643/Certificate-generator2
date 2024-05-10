@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { google } from 'googleapis';
+// import { google } from 'googleapis';
 
 const Example = () => {
   const [files, setFiles] = useState([]);
@@ -11,7 +11,7 @@ const Example = () => {
         const serviceAccount = require('./api.json');
 
         // Create a JWT client using the service account credentials
-        const auth = new google.auth.JWT(
+        const auth = new auth.JWT(
           serviceAccount.client_email,
           null,
           serviceAccount.private_key,
@@ -22,7 +22,7 @@ const Example = () => {
         await auth.authorize();
 
         // Create a Drive instance
-        const drive = google.drive({ version: 'v3', auth });
+        const drive = drive({ version: 'v3', auth });
 
         // Specify the folder ID of the folder you want to retrieve files from
         const folderId = '1zbpvpNDwCG-cg04Sus9304P5OUyqoa3R';
