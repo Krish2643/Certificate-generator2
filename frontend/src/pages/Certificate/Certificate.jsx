@@ -12,7 +12,6 @@ const Certificate = () => {
    const [email, setEmail] = useState("");
    const [CourseName, setCourseName] = useState("Course");
    const [date, setDate] = useState("01/01/2024");
-   const certificateWrapper = useRef();
    const [image, setImage] = useState(null);
   
 
@@ -25,56 +24,9 @@ const Certificate = () => {
       html2CanvasOptions: { backgroundColor: null },
     });
      console.log(pngData);
-    // const formData = new FormData();
-    // formData.append("image", image);
-    // formData.append("file", new Blob([pngData], { type: "image/png" }), "certificate.png");
-
-  
-    // const response = await fetch("http://localhost:8080/upload", {
-    //   method: "POST",
-    //   body: formData,
-    // });
-  
-    // if (!response.ok) {
-    //   console.log("Failed to upload file");
-    // }
-    // // console.log(response);
-  
-    // // const data = await response.json();
-    // console.log("File response", response);
-
-    // try {
-    //   const response = await axios.post('http://localhost:8080/upload', formData, {
-    //     headers: {
-    //       'Content-Type': 'multipart/form-data'
-    //     }
-    //   });
-    //   console.log('Image uploaded:', response.data);
-    // } catch (error) {
-    //   console.error('Error uploading image:', error);
-    // }
+    
   };
 
-
-/*
-    const handleSubmit = useCallback(() => {
-      if (ref.current === null) {
-        return
-      }
-    
-      toPng(ref.current, { cacheBust: true, })
-        .then((dataUrl) => {
-          const link = document.createElement('a')
-          link.download = `${name}-${CourseName}-certificate.png`
-          link.href = dataUrl
-          link.click()
-          console.log(link.href);
-        })
-        .catch((err) => {
-          console.log(err)
-        })
-    }, [ref])
-*/
 
   return (
     <div className='container'>

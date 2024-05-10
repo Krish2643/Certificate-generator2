@@ -25,7 +25,7 @@ const Example = () => {
         const drive = drive({ version: 'v3', auth });
 
         // Specify the folder ID of the folder you want to retrieve files from
-        const folderId = '1zbpvpNDwCG-cg04Sus9304P5OUyqoa3R';
+        const folderId = '##folder id';
 
         // List files in the specified folder
         const response = await drive.files.list({

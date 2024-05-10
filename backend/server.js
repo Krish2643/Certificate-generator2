@@ -48,7 +48,7 @@ const listFiles = async () => {
 };
 
 // Example usage
-const code = 'ya29.a0AXooCgtGh_HkIQBa_hwJlX43KpcYVDiI7oRDgLlmXsPdm-wvkgyD2QyNAxUaT3eWGxwuFBeMfqY3TUgczEipGZi93Z-C6qBg4hQr8wwZKop-ARfG4oFT6m6fnjayWGGZg6FxcizdltW0Z9iGYuB1VL0zGhk8Kk0Cw4STaCgYKAT4SARASFQHGX2Mib-_1cxvMij54EsyEZk9ZnA0171';
+const code = 'Access Token';
 // getToken(code).then(listFiles);
 
 app.listen(7000, () => {
